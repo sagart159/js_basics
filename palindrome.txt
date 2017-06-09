@@ -1,0 +1,29 @@
+
+function palindrome(str) {
+  // Good luck!
+  
+var reversedString = '';  
+
+  
+str = str.toLowerCase() ;
+str = str.replace(/[!_@#$%^&* ,._():/\-"]/ig, "");
+  
+  
+var strLength = str.length;
+var strArray = str.split("");
+   // generate the reversed string here
+  for (var i=strLength-1; i>=0; i--) {
+    reversedString += strArray[i];
+  }  
+  
+  
+  if (str===reversedString){
+    return true;
+  }
+  
+  return false;
+}
+
+
+
+palindrome("_eYe");

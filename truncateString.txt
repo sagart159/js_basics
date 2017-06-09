@@ -1,0 +1,30 @@
+
+function truncateString(str, num) {
+  
+  var finalStr = '';
+  var finalStrLength;
+  var strLength = str.length;
+  
+  
+  if (num <=3) {
+       finalStr =   str.substring(0, num) + '...';    
+      }
+
+  else {
+    
+    if (strLength <=num) {
+      finalStr = str;
+    }
+    else
+      {
+       finalStr =   str.substring(0, num-3) + '...';
+       finalStrLength  = finalStr.length;
+      }
+
+  }
+ 
+  return finalStr;
+ 
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 11);

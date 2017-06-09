@@ -1,0 +1,16 @@
+
+function mutation(arr) {
+    
+  for (var i = 0; i < arr[1].length; i++){
+    if (arr[0].toLowerCase().    // first array lowercase element
+        indexOf(
+                arr[1][i].toLowerCase()  // second array lowercase
+               ) == -1)
+      
+      return false;
+  }
+ 
+  return true;
+}
+
+mutation(["hello", "HiLL"]);

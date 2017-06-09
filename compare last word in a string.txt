@@ -1,0 +1,17 @@
+
+function confirmEnding(str, target) {
+  
+  targetLength = target.length;
+  strLength = str.length;
+  returnResult = '';
+    
+  subStr = str.substring(strLength-targetLength, strLength);
+  
+  if (subStr == target){
+    return true;
+  }
+  else return false;
+   
+}
+
+confirmEnding("Bastian", "ian");

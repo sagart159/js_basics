@@ -1,0 +1,39 @@
+
+function getIndexToIns(arr, num) {
+
+  // sort the array
+arr.sort(
+  function(a, b)
+         {
+           return a-b;
+         }
+        );
+  // compare incoming number with array elements
+
+  var returnVal = '';
+  var lowerIndex = '';
+  
+  for(var i=0; i<arr.length; i++){
+    
+    if(arr[i]<num)
+      {
+        lowerIndex = i; //arr[i];
+        returnVal = i+1;
+      }
+    else
+      {
+        if(arr[i] == num)
+          {
+            lowerIndex = i;
+            returnVal=i;
+           }
+      }
+    
+    }  
+  
+  // return the index where it should be inserted  
+  
+  return returnVal;
+}
+
+getIndexToIns([40, 60, 50, 25, 18, 38], 30);

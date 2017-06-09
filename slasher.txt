@@ -1,0 +1,14 @@
+
+function slasher(arr, howMany) {
+  // it doesn't always pay to be first
+  var returnArr = [];
+  
+  var indexToRemove = 0;
+  var numberToRemove = howMany;
+
+  returnArr = arr.splice(indexToRemove, numberToRemove);  
+  
+  return arr  ;	// this is the array left after splicing the elements
+}
+
+slasher([1, 2, 3], 2);
